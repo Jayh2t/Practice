@@ -1,0 +1,64 @@
+@import url("https://fonts.googleapis.com/css2?family=Scheherazade+New:wght@400;700&display=swap");
+html {
+  font-size: 62.5%;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Scheherazade New", serif;
+}
+
+body {
+  font-size: 1.8rem;
+  line-height: 1.4;
+  color: #fff;
+  font-weight: 400;
+  background-image: url("./img/larry-teo-rRDqIJRp1T4-unsplash.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.countdown-container {
+  background: rgba(0, 0, 0, 0.5);
+  padding: 20px;
+  border-radius: 20px;
+}
+
+.countdown-info {
+  display: flex;
+  gap: 0 120px;
+  justify-content: space-between;
+  align-items: center;
+}
+.countdown-info h1 {
+  font-size: 4rem;
+  font-weight: 400;
+}
+
+.date p {
+  font-size: 2rem;
+}
+
+.countdown-time {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0 30px;
+}
+
+.time-item h3 {
+  font-weight: 400;
+  font-size: 8rem;
+}
+.time-item p {
+  text-align: center;
+}

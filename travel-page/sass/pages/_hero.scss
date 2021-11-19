@@ -1,0 +1,157 @@
+@use "../utilities/variables" as *;
+@use "../utilities/mixins" as *;
+
+.hero {
+  width: 100vw;
+  background: url("../image/bg-hero.png");
+  background-size: cover;
+  background-position: center;
+  position: relative;
+
+  &-container {
+    padding-top: 108px;
+    color: $white;
+  }
+
+  &-content {
+    padding: 260px 0 190px;
+  }
+
+  &-heading {
+    max-width: 860px;
+    font-size: 9.6rem;
+    line-height: 110%;
+    letter-spacing: 0.01em;
+    margin-bottom: 32px;
+  }
+  &-desc {
+    max-width: 680px;
+    font-size: 2.8rem;
+    line-height: 150%;
+  }
+
+  &-book {
+    height: 200px;
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(70);
+    border-radius: 20px 20px 0px 0px;
+    padding: 35px 48px 56px;
+  }
+  &-title {
+    font-size: 1.8rem;
+    line-height: 21px;
+    margin-bottom: 16px;
+  }
+  &-box {
+    display: flex;
+    align-items: center;
+    gap: 0 30px;
+  }
+  &-list {
+    width: 1074px;
+    border: 1px solid $light;
+    border-radius: 10px;
+    @include flex(space-between, center);
+  }
+  &-place {
+    @include flex(space-between, center);
+    height: 72px;
+    padding: 16px 22px;
+    & .h {
+      @include flex(space-between, center);
+    }
+
+    &:nth-child(1) {
+      flex: 2.5;
+    }
+    &:not(:first-child) {
+      flex: 1;
+    }
+    &:not(:last-child) {
+      border-right: thin solid;
+    }
+    &:nth-child(2),
+    &:nth-child(3) {
+      @include flex(center, center);
+    }
+
+    &-icon {
+      margin-right: 16px;
+    }
+
+    &-title {
+      color: $light;
+      font-size: 1.4rem;
+      line-height: 14px;
+      margin-bottom: 8px;
+    }
+
+    &-info {
+      font-size: 16px;
+      line-height: 20px;
+    }
+  }
+}
+
+.btn {
+  width: 240px;
+  background: #91cb82;
+  padding: 24px 0;
+  text-align: center;
+  border-radius: 10px;
+  font-size: 1.8rem;
+  line-height: 20px;
+  border: 0;
+  outline: none;
+  color: $white;
+}
+
+.hero-list ion-icon {
+  color: rgba(231, 231, 242, 1);
+  font-size: 2.8rem;
+}
+
+.slide {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 570px;
+  height: 400px;
+  display: flex;
+
+  & > div {
+    flex: 1;
+  }
+
+  &-content {
+    padding: 48px 36px;
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(70);
+    border-radius: 16px 0px 0px 16px;
+  }
+
+  &-heading {
+    font-size: 2rem;
+    line-height: 20px;
+    margin-bottom: 36px;
+  }
+
+  &-title {
+    font-size: 3.6rem;
+    line-height: 135%;
+    margin-bottom: 87px;
+  }
+
+  &-next {
+    opacity: 0.5;
+
+    ion-icon {
+      font-size: 3rem;
+    }
+  }
+
+  &-image {
+    height: 100%;
+  }
+}

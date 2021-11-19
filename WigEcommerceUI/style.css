@@ -1,0 +1,169 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&family=Roboto:wght@400;700&display=swap");
+:root {
+  --ff-primary: "Roboto Condensed", sans-serif;
+  --ff-secondary: "Roboto", sans-serif;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: rgba(255, 255, 255, 0.8);
+  font-size: 1.65rem;
+}
+
+main {
+  display: flex;
+}
+
+img {
+  width: 100%;
+  object-fit: cover;
+}
+
+/* style section menu */
+.menu {
+  width: 250px;
+  height: 100vh;
+}
+
+.menu-container {
+  padding: 50px 25px;
+  height: 100%;
+  position: relative;
+}
+
+.menu-bar h3 {
+  font-size: 30px;
+  font-family: var(--ff-primary);
+  font-weight: bold;
+  margin: 30px 0;
+}
+
+.menu-explore ul {
+  list-style: none;
+}
+
+.menu-explore ul li {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 23px;
+}
+
+.menu-explore ul li img {
+  width: 22px;
+  height: 22px;
+}
+
+.menu-explore ul li a {
+  text-decoration: none;
+  font-family: var(--ff-primary);
+  color: inherit;
+  font-size: 1.571rem;
+  font-weight: 600;
+}
+
+.menu-help {
+  position: absolute;
+  bottom: 50px;
+  left: 25px;
+  right: 25px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.menu-help a {
+  text-decoration: none;
+  font-family: var(--ff-primary);
+  color: inherit;
+  font-size: 1.571rem;
+  font-weight: 600;
+}
+
+/* style section store */
+.store {
+  width: 100%;
+}
+
+.store-top {
+  width: 100%;
+  padding: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.store-search {
+  width: 250px;
+  display: flex;
+  align-items: center;
+}
+
+.store-search input {
+  width: 100%;
+  padding: 10px;
+  outline: none;
+  border: none;
+  color: inherit;
+  font-family: var(--ff-secondary);
+  font-weight: 600;
+}
+
+.store-search ion-icon {
+  font-size: 2rem;
+  padding: 0 5px;
+}
+
+.store-menu {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+.store-item {
+  list-style: none;
+}
+
+.store-item ion-icon {
+  cursor: pointer;
+}
+
+.store-link {
+  text-decoration: none;
+  color: inherit;
+  font-family: var(--ff-secondary);
+  font-size: 1.7rem;
+  font-weight: 600;
+  padding-bottom: 5px;
+}
+
+.store-link.active {
+  border-bottom: 2px solid;
+}
+
+/* store gallery */
+.store-gallery {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(260px, 1fr));
+  grid-template-rows: minmax(180px, auto);
+  grid-gap: 20px;
+}
+
+.grid-row-2 {
+  grid-row: span 2;
+}
+
+.grid-col-2 {
+  grid-column: span 2;
+}

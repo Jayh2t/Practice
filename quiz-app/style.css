@@ -1,0 +1,95 @@
+@import url("https://fonts.googleapis.com/css2?family=Scheherazade+New:wght@400;700&display=swap");
+:root {
+  --fontsize: 2rem;
+  --fonttitle: 3rem;
+
+  --clr-primary: rgb(93, 95, 192);
+}
+
+@media screen and (max-width: 680px) {
+  :root {
+    --fontsize: 1.6rem;
+    --fonttitle: 2rem;
+  }
+}
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+  font-family: "Scheherazade New", serif;
+}
+
+body {
+  font-size: var(--fontsize);
+  background: rebeccapurple;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  line-height: 175%;
+}
+
+.quiz-container {
+  width: 600px;
+  max-width: 90%;
+  background: white;
+  padding: 4rem;
+  border-radius: 2rem;
+}
+
+.quiz-info h1 {
+  font-size: var(--fonttitle);
+  color: var(--clr-primary);
+}
+
+progress {
+  width: 100%;
+  height: 10px;
+  margin: 20px 0;
+  border-radius: 10px;
+  overflow: hidden;
+  -webkit-appearance: none;
+}
+
+::-webkit-progress-value {
+  background-color: rebeccapurple;
+}
+::-webkit-progress-bar {
+  background-color: rgb(212, 212, 212);
+}
+
+.quiz-content h3 {
+  font-size: var(--fonttitle);
+  color: var(--clr-primary);
+  margin-bottom: 10px;
+}
+
+.quiz-ans {
+  font-size: var(--fontsize);
+  color: var(--clr-primary);
+  font-weight: 700;
+}
+.quiz-ans label {
+  padding-left: 10px;
+}
+.quiz-content button {
+  border: none;
+  outline: none;
+  cursor: pointer;
+  background: rebeccapurple;
+  color: white;
+  margin: 10px 0;
+  padding: 5px 20px;
+  border-radius: 10px;
+  font-size: var(--fontsize);
+  transition: all 0.4s ease;
+}
+.quiz-content button:active {
+  transform: scale(0.8);
+}
